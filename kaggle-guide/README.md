@@ -2,7 +2,7 @@
 
 ## Watch the video or go through notebooks
 - You can either read this document and go through the notebook files i.e. `buildmodel.ipynb` then `modelpredict.ipynb`
-- Or, you can watch this [YouTube Video](#)
+- Or, you can watch this [YouTube Video]([#](https://youtu.be/-wASK_i82n0))
 - Whichever works for you so that you are not stuck working on your first Kaggle project
 
 ## Folder Structure
