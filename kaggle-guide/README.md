@@ -1,6 +1,25 @@
-## Use `train.csv` as your core dataset
-1. Use this data for training and model evaluation
-2. Run your train-test splits or cross-validation on this dataset
-3. Note that the id column is mostly there for identifying a unique observation and is not necessarily relevant to your model. Note that after predicting the test cases, you'll be required to submit an end submission including the id of the observation and your predicted `y`
-4. Note that your `test.csv` does not include the target variable and therefore cannot help you in modeling. Use this only for generating your final predictions for Kaggle submission.
-5. For unclean data, the steps you take on the `train.csv` should be the same you take on `test.csv` before you make the prediction.
+# Kaggle competition guide for Machine Learning students
+
+## Watch the video or go through notebooks
+- You can either read this document and go through the notebook files i.e. `buildmodel.ipynb` then `modelpredict.ipynb`
+- Or, you can watch this [YouTube Video](#)
+- Whichever works for you so that you are not stuck working on your first Kaggle project
+
+## Folder Structure
+In this folder, we have the following files/folders:
+1. `data` Folder containing the data downloaded from kaggle i.e. `train.csv` `test.csv` and `sample-submission.csv`
+2. `final` Folder containing exports from my code i.e. `model.sav` and `submission.csv`
+3. `buildmodel.ipynb` Notebook file where we build the model using the training data
+4. `modelpredict.ipynb` Notebook file where we generate the final submission from testing data
+
+## Summary of the steps to take
+
+### Phase I: Build the Model with `train.csv`
+1. Import, explore, and visualise your data
+2. Preprocessing and/or prepare your data for model
+3. Train, find the optimal model, and export/save the final model
+
+### Phase II: Make predictions on `test.csv`
+1. Run the same preprocessing stesp you ran on your training data
+2. Make predictions using the model you trained and saved previosuly
+3. Export the submission file (Use `sample-submission.csv` as your template)
