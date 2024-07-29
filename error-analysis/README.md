@@ -1,4 +1,5 @@
 # Error Analysis Notes
+### Notes by [Cyril Michino](https://cyril.michino.co.ke) | Data Science at [Zindua School](https://zinduaschool.com)
 [Click here](https://docs.google.com/presentation/d/1o3o_cNCqXzmupZ3zs7-ysfbpjzkFWIaUzGXhJg6WJNo/edit?usp=sharing) to see the slides for our Error Analysis workshop on Saturday, July 27, 2024
 
 ## Bias-Variance Analysis
@@ -32,3 +33,18 @@ To fix this model, we can run the following based on where we are fixing varianc
 - Regularisation (Every model has a hyperparameter for regularisation)
 - Try different models
 - Try different cost function (Almost similar to trying a different model)
+
+## Diagnosing Errors made by your model
+Beyond bias-variance analysis, identifying errors made by your model is extremely important in identifying where your model falls short. This could mean looking at misclassified samples for classification problems, and/or looking for observations with highest residuals/errors for regression problems. Below are some guiding questions on identifying and prioritising errors:
+- For classification, are there classes that are more prone to errors?
+- What are the differences between error observations and correct observations?
+- Is there a correlation between your features and the errors?
+
+To fix these errors, we can:
+- Feature engineering – create new features to handle the errors (Ideal for image, text, and audio data problems where features are not structured)
+- Feature selection – drop the feature if it causes errors and is not significant
+- Feature transformation – transform data to better create linear relationships
+
+See the notebooks in this subfolder to see how we diagnose errors for image classfication, regression, and classification.
+
+**Note:** Most of your time in building machine learning models for production will be spent in either data cleaning or error analysis. This is what sets apart performing models from those that do not perform as we mostly always have access to the same algorithms that even those who know nothing about the inner workings can simply spray and pray.
